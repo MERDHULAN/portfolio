@@ -1,80 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-        <link rel="stylesheet" href="styles.css">
-        <title>Merdhulan portfolio</title>
-    </head>
-
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Merdhulan M, IT Web Developer in Chennai. Shopify, Python, SQL and networking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<title>Merdhulan M | IT Web Developer</title>
+</head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <a href="#home" class="logo">portfolio</a>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="progress" id="progress"></div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h3>Hi, Myself</h3>
-            <h1>Merdhulan</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p> I’m a Frontend Developer with a passion for clean design and intuitive interfaces. With experience in HTML, CSS, JavaScript, and tools like React and Figma, I bridge the gap between beautiful design and functional code to deliver smooth, user-friendly web experiences.</p>
-            <div class="social-media">
-            <a href="https://www.linkedin.com/in/merdhulan-m-b36895337"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://x.com/20e222123747"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/MERDHULAN"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/mithu__snooky/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-       <a href="mithu.pdf" download class="cta-button">Download CV</a>
-        </div>
-        <div class="hero-image">
-            <img src="profile.png" alt="Profile" class="profile-img">
-        </div>
-    </section>
+<header class="nav">
+  <a href="#home" class="logo">M<span>.</span></a>
+  <nav>
+    <ul id="links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="nav-tools">
+    <button class="kbd" id="openPalette" aria-label="Open quick navigation">Ctrl K</button>
+    <button class="icon-btn" id="theme" aria-label="Switch light or dark theme"><i class="fas fa-moon"></i></button>
+    <button class="icon-btn menu" id="menu" aria-label="Menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Technical Expertise</h2>
-        <div class="skills-grid">
-            <div class="skills-card">
-                <i class="fas fa-code"></i>
-                <h3>Frontend Development</h3>
-                <p> HTML5, CSS3, JavaScript</p>
-            </div>
-            <div class="skills-card">
-                <i class="fas fa-server"></i>
-                <h3>Backend Development</h3>
-                <p>Python,SQL</p>
-            </div>
-            <div class="skills-card">
-                <i class="fas fa-paint-brush"></i>
-                <h3>UI/UX Design</h3>
-                <p>Figma</p>
-            </div>
-        </div>
-    </section>
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="status"><i></i> Open to IT and web roles in Chennai</p>
+    <h1>Merdhulan M</h1>
+    <p class="role">I'm an <b id="typed"></b></p>
+    <p class="lead">MCA graduate who builds Shopify storefronts, writes Python, and understands the network underneath. I fix what's broken and ship what's needed.</p>
+    <div class="actions">
+      <a class="btn primary" href="mithu.pdf" download><i class="fas fa-download"></i> Download CV</a>
+      <a class="btn" href="#contact">Hire me</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/merdhulan-m-b36895337" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/MERDHULAN" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/20e222123747" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/mithu__snooky/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="profile.png" alt="Merdhulan M">
+    <span class="chip c1"><i class="fa-brands fa-shopify"></i> Shopify</span>
+    <span class="chip c2"><i class="fa-brands fa-python"></i> Python</span>
+    <span class="chip c3"><i class="fas fa-network-wired"></i> CCNA</span>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 CyberDev. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://github.com/MERDHULAN"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/merdhulan-m-b36895337/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/20e222123747"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/mithu__snooky/"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Shopify</span><span>Liquid</span><span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML and CSS</span><span>Figma</span><span>Git and GitHub</span><span>Vercel</span><span>CCNA</span><span>Linux</span>
+</div></div>
 
-    <!-- Link to JS file -->
-    <script src="Script.js"></script>
+<section class="stats">
+  <div><b data-n="4">0</b><span>Roles and internships</span></div>
+  <div><b data-n="8.4" data-d="1">0</b><span>MCA GPA</span></div>
+  <div><b data-n="2">0</b><span>Cisco CCNA modules</span></div>
+  <div><b data-n="4">0</b><span>Projects shipped</span></div>
+</section>
+
+<section id="about" class="section">
+  <h2>About me</h2>
+  <div class="two">
+    <div class="prose">
+      <p>I hold a Master of Computer Applications from Guru Nanak College (GPA 8.4), with a solid base in web development, network fundamentals, system troubleshooting and relational databases.</p>
+      <div class="more" id="aboutMore" hidden>
+        <p>At BLiS by Wedtree I engineer Shopify pages with Liquid, design reusable theme blocks, manage the Vajro mobile shopping app and run daily diagnostics to keep the platform fast and online.</p>
+        <p>Before that I built AI and data workflows in Python, co-developed an Inventory CRM with SQL, and researched accessibility for medical apps. I'm aiming to take on harder IT problems and support corporate technology infrastructure.</p>
+      </div>
+      <button class="link-btn" id="aboutBtn" aria-expanded="false">Read more</button>
+    </div>
+    <div class="certs">
+      <h3>Education and certifications</h3>
+      <div class="cert"><i class="fas fa-graduation-cap"></i><p><b>MCA, GPA 8.4</b><small>Guru Nanak College, 2023-2025</small></p></div>
+      <div class="cert"><i class="fas fa-network-wired"></i><p><b>CCNA: Introduction to Networks</b><small>Cisco Networking Academy</small></p></div>
+      <div class="cert"><i class="fas fa-route"></i><p><b>CCNA: Switching, Routing, and Wireless Essentials</b><small>Cisco Networking Academy</small></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="jobs">
+    <details class="job" open>
+      <summary><span><b>IT Web Developer and Maintenance Trainee</b><small>BLiS by Wedtree</small></span><em>Dec 2025 - Present</em></summary>
+      <ul>
+        <li>Build and refresh dynamic e-commerce pages with HTML, CSS, JavaScript and Liquid on Shopify.</li>
+        <li>Design reusable custom theme blocks for flexible content and cleaner site architecture.</li>
+        <li>Manage and optimize the mobile shopping app interface using Vajro (Superfans).</li>
+        <li>Run daily site diagnostics, debugging and performance tuning to keep uptime fluid.</li>
+        <li>Use generative AI tools to speed up layout prototyping and asset deployment.</li>
+      </ul>
+    </details>
+    <details class="job">
+      <summary><span><b>Python with AI Intern</b><small>Careerschool HR Solutions</small></span><em>Jul 2025 - Jan 2026</em></summary>
+      <ul>
+        <li>Built object-oriented Python frameworks and machine learning algorithms.</li>
+        <li>Formulated data-driven AI workflows that automate routine data profiling.</li>
+        <li>Took part in full project sprints, from requirements analysis to logic validation.</li>
+      </ul>
+    </details>
+    <details class="job">
+      <summary><span><b>Intern Developer</b><small>Pentagon Innovations</small></span><em>Feb 2025 - May 2025</em></summary>
+      <ul>
+        <li>Co-developed a responsive Inventory CRM with HTML, CSS, JavaScript and SQL.</li>
+        <li>Engineered relational schemas and optimized CRUD queries for inventory and client data.</li>
+        <li>Collaborated in an agile team to turn client requirements into intuitive UI features.</li>
+      </ul>
+    </details>
+    <details class="job">
+      <summary><span><b>Research Analyst</b><small>E Silicon Labs</small></span><em>Nov 2024 - Jan 2025</em></summary>
+      <ul>
+        <li>Ran UI/UX usability research for cross-platform medical web and mobile prototypes.</li>
+        <li>Audited wireframes against accessibility standards for consistent experiences.</li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="grid3">
+    <div class="card"><i class="fas fa-code"></i><h3>Languages</h3><div class="tags"><span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Liquid</span></div></div>
+    <div class="card"><i class="fas fa-toolbox"></i><h3>Tools and platforms</h3><div class="tags"><span>Shopify</span><span>Vajro</span><span>Git</span><span>GitHub</span><span>Figma</span><span>VS Code</span><span>Vercel</span></div></div>
+    <div class="card"><i class="fas fa-server"></i><h3>Networking and systems</h3><div class="tags"><span>Basic Networking</span><span>Troubleshooting</span><span>Windows</span><span>Linux (basic)</span></div></div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <h2>What I can do for you</h2>
+  <div class="grid4">
+    <div class="card"><i class="fa-brands fa-shopify"></i><h3>Shopify development</h3><p>Custom Liquid sections, reusable theme blocks and page refreshes that keep stores flexible.</p></div>
+    <div class="card"><i class="fas fa-laptop-code"></i><h3>Web development</h3><p>Responsive sites and dashboards in HTML, CSS and JavaScript with SQL-backed data.</p></div>
+    <div class="card"><i class="fas fa-robot"></i><h3>Python and AI automation</h3><p>Scripts and workflows that automate data profiling and repetitive tasks.</p></div>
+    <div class="card"><i class="fas fa-screwdriver-wrench"></i><h3>Site support and troubleshooting</h3><p>Daily diagnostics, debugging and performance tuning, backed by networking fundamentals.</p></div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button class="on" data-f="all">All</button><button data-f="web">Web</button><button data-f="python">Python</button>
+  </div>
+  <div class="grid2" id="projGrid">
+    <button class="project" data-cat="web" data-i="0"><span class="cover c-a"><i class="fas fa-boxes-stacked"></i></span><b>Inventory CRM System</b><small>HTML, CSS, JavaScript, SQL</small></button>
+    <button class="project" data-cat="python" data-i="1"><span class="cover c-b"><i class="fas fa-music"></i></span><b>Desktop Music Player</b><small>Python, YouTube Music API</small></button>
+    <button class="project" data-cat="python" data-i="2"><span class="cover c-c"><i class="fas fa-terminal"></i></span><b>Terminal Logic Engines</b><small>Python, command line</small></button>
+    <button class="project" data-cat="web" data-i="3"><span class="cover c-d"><i class="fas fa-globe"></i></span><b>Personal Portfolio</b><small>HTML, CSS, JavaScript, Vercel</small></button>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Let's talk</h2>
+  <div class="two">
+    <div class="contact-info">
+      <p class="lead">Hiring, or have a site that needs fixing? Send a message and I'll reply quickly.</p>
+      <button class="contact-row" id="copyMail"><i class="fas fa-envelope"></i><span>merdhulan373ppt@gmail.com</span><em id="copyMsg">Copy</em></button>
+      <a class="contact-row" href="tel:+919176144661"><i class="fas fa-phone"></i><span>+91 91761 44661</span></a>
+      <div class="contact-row"><i class="fas fa-location-dot"></i><span>Chennai, India</span></div>
+    </div>
+    <form id="form" class="form">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Message<textarea name="msg" rows="5" required></textarea></label>
+      <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn primary" type="submit"><i class="fas fa-paper-plane"></i> Send message</button>
+      <p class="hint" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Merdhulan M. All rights reserved.</p>
+  <a href="#home" class="top" id="top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="icon-btn close" id="mClose" aria-label="Close">&times;</button>
+    <h3 id="mTitle"></h3>
+    <div class="tags" id="mTags"></div>
+    <ul id="mList"></ul>
+  </div>
+</div>
+
+<div class="modal" id="palette" hidden>
+  <div class="sheet pal" role="dialog" aria-modal="true" aria-label="Quick navigation">
+    <input id="pIn" placeholder="Jump to a section..." autocomplete="off">
+    <ul id="pList"></ul>
+  </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="Script.js"></script>
 </body>
 </html>
